@@ -3,122 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>অনলাইন স্কাউট হ্যান্ডবুক কুইজ ২০২৬ | Premium App Edition</title>
+    <title>চূড়ান্ত ফলাফল | স্কাউট হ্যান্ডবুক কুইজ ২০২৬</title>
     
-    <meta name="description" content="নিজের মেধা ও স্কাউটিং জ্ঞানকে কাজে লাগিয়ে জিতে নাও এই চমৎকার উপহার 'স্কাউট হ্যান্ডবুক' বইটি।">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://আপনার-গিটহাব-লিংক-এখানে-দিন.github.io/">
-    <meta property="og:title" content="অনলাইন স্কাউট হ্যান্ডবুক কুইজ ২০২৬">
-    <meta property="og:description" content="নিজের মেধা ও স্কাউটিং জ্ঞানকে কাজে লাগিয়ে জিতে নাও 'স্কাউট হ্যান্ডবুক' বইটি!">
-    
-    <meta property="og:image" content="https://i.postimg.cc/rF2SsYmZ/banner.webp">
-    <meta property="og:image:secure_url" content="https://i.postimg.cc/rF2SsYmZ/banner.webp">
-    <meta property="og:image:type" content="image/webp">
-    <meta property="og:image:width" content="1280">
-    <meta property="og:image:height" content="473">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="অনলাইন স্কাউট হ্যান্ডবুক কুইজ ২০২৬">
-    <meta name="twitter:description" content="নিজের মেধা ও স্কাউটিং জ্ঞানকে কাজে লাগিয়ে জিতে নাও 'স্কাউট হ্যান্ডবুক' বইটি!">
-    <meta name="twitter:image" content="https://i.postimg.cc/rF2SsYmZ/banner.webp">
+    <meta name="description" content="স্কাউট হ্যান্ডবুক কুইজ ২০২৬ এর চূড়ান্ত ফলাফল প্রকাশিত হয়েছে। এখনই আপনার রেজাল্ট চেক করুন।">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="popup-overlay" id="announcementPopup">
-        <div class="popup-card">
-            <div class="popup-icon"><i class="fa-solid fa-book"></i></div>
-            <h3 class="popup-title">নতুন সংস্করণ আসছে!</h3>
-            <p class="popup-text">
-                আগামী <strong class="text-red">১৮ জুন</strong> থেকে 
-                <a href="https://maps.app.goo.gl/ebeMqS6QzJyM1oHu5" target="_blank" class="announce-link"><i class="fa-solid fa-location-dot"></i> কাকরাইল স্কাউট শপ</a> 
-                এবং অনলাইনে <strong>স্কাউট হ্যান্ডবুক</strong> বইটির নতুন সংস্করণ পাওয়া যাবে। বিস্তারিত জানতে 
-                <a href="https://www.facebook.com/Scouthandbook1" target="_blank" class="announce-link"><i class="fa-brands fa-facebook"></i> আমাদের পেজে</a> 
-                চোখ রাখুন।
-            </p>
-            <button class="popup-close-btn" id="closePopupBtn">ঠিক আছে</button>
-        </div>
-    </div>
-
-    <div class="popup-overlay" id="quizCategoryPopup">
-        <div class="popup-card quiz-popup-card">
-            <button class="top-close-icon" id="closeQuizPopupBtn">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <h3 class="popup-title" style="font-size: 20px; margin-top: 10px; margin-bottom: 6px;">শাখা নির্বাচন করুন</h3>
-            <p class="popup-text" style="margin-bottom: 20px; font-size: 14px; color: #86868B;">আপনি কোন শাখায় কুইজ দিতে চান?</p>
-            
-            <div class="quiz-cat-wrapper">
-                <div class="quiz-cat-card scout-cat-card" id="scoutQuizBtn">
-                    <div class="cat-info">
-                        <h4 style="color: dodgerblue;">স্কাউট শাখা</h4>
-                        <p>স্কুল ও সমমানের জন্য</p>
-                    </div>
-                    <i class="fa-solid fa-chevron-right cat-arrow"></i>
-                </div>
-                
-                <div class="quiz-cat-card rover-cat-card" id="roverQuizBtn">
-                    <div class="cat-info">
-                        <h4 style="color: red;">রোভার / লিডার</h4>
-                        <p>কলেজ, বিশ্ববিদ্যালয় ও লিডার</p>
-                    </div>
-                    <i class="fa-solid fa-chevron-right cat-arrow"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup-overlay" id="resultPopupOverlay">
-        <div class="popup-card result-popup-card">
-            <button class="top-close-icon" id="closeResultPopupBtn">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            
-            <div class="result-header">
-                <i class="fa-solid fa-ranking-star"></i>
-                <h3>চূড়ান্ত ফলাফল</h3>
-            </div>
-
-            <div class="result-tabs">
-                <button class="tab-btn active" data-tab="scout">স্কাউট শাখা</button>
-                <button class="tab-btn" data-tab="rover">রোভার / লিডার</button>
-            </div>
-
-            <div class="search-box">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="resultSearch" placeholder="নাম বা ইউনিটের নাম দিয়ে খুঁজুন...">
-            </div>
-
-            <div class="result-container" id="resultContainer">
-                </div>
-        </div>
-    </div>
-
-    <div class="skeleton-screen" id="skeletonScreen">
-        <div class="sk-glass">
-            <div class="sk-shimmer sk-banner"></div>
-            <div class="sk-card sk-timer-card">
-                <div class="sk-row" style="margin-bottom: 8px;"><div class="sk-shimmer sk-pill"></div></div>
-                <div class="sk-shimmer sk-line w-40 h-lg"></div>
-                <div class="sk-row sk-between" style="margin-top: 10px;">
-                    <div class="sk-shimmer sk-timer-box"></div><div class="sk-shimmer sk-timer-box"></div>
-                    <div class="sk-shimmer sk-timer-box"></div><div class="sk-shimmer sk-timer-box"></div>
-                </div>
-            </div>
-            <div class="sk-card">
-                <div class="sk-shimmer sk-line w-60 h-lg"></div><div class="sk-shimmer sk-line w-100"></div>
-                <div class="sk-shimmer sk-button" style="margin-bottom: 12px;"></div>
-                <div class="sk-shimmer sk-line w-100" style="height: 36px; border-radius: 12px;"></div>
-            </div>
-            <div class="sk-card">
-                <div class="sk-row" style="margin-bottom: 20px;"><div class="sk-shimmer sk-circle"></div><div class="sk-shimmer sk-line w-30 h-lg"></div></div>
-                <div class="sk-row sk-between"><div class="sk-shimmer sk-circle"></div><div class="sk-shimmer sk-circle"></div><div class="sk-shimmer sk-circle"></div><div class="sk-shimmer sk-circle"></div></div>
-            </div>
-        </div>
-    </div>
 
     <div class="ambient-canvas">
         <div class="orb orb-1"></div>
@@ -128,118 +20,16 @@
     <div class="dust" id="dust-container"></div>
     <canvas id="confetti" style="position: fixed; inset: 0; z-index: 100; pointer-events: none;"></canvas>
 
-    <div class="dynamic-island" id="dynamicIsland">
-        <div class="island-content">
-            <i class="fa-solid fa-bell island-icon" id="islandIcon"></i>
-            <span class="island-text" id="islandMsg">নোটিফিকেশন</span>
-        </div>
-    </div>
-
     <div class="wrapper" id="mainWrapper">
         <div class="glass-panel">
             
-            <header class="header animate-in">
+            <header class="header animate-in del-1">
                 <div class="hero-banner">
                     <img src="photos/banner.webp" alt="Scout Handbook Quiz 2026 Banner">
-                    <div class="live-badge" id="liveTag" style="display: none;">
-                        <div class="live-pulse"></div> লাইভ
-                    </div>
                 </div>
             </header>
 
-            <section class="timer-module animate-in del-1">
-                <div class="liquid-track" id="liquidTrack"></div>
-                <div class="timer-content">
-                    <div class="timer-meta">
-                        <div class="event-tag">
-                            <span class="dot"></span> আসন্ন ইভেন্ট 
-                            <span class="progress-percentage" id="progText">0%</span>
-                        </div>
-                        <h3>১২ জুন ২০২৬, রাত ৮:০০</h3>
-                    </div>
-                    
-                    <div class="time-blocks">
-                        <div class="block"><span class="num" id="d">00</span><span class="lbl">দিন</span></div><div class="colon">:</div>
-                        <div class="block"><span class="num" id="h">00</span><span class="lbl">ঘণ্টা</span></div><div class="colon">:</div>
-                        <div class="block"><span class="num" id="m">00</span><span class="lbl">মিনিট</span></div><div class="colon">:</div>
-                        <div class="block"><span class="num" id="s">00</span><span class="lbl">সেকেন্ড</span></div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="hero-card animate-in del-2">
-                <div class="hero-info">
-                    <h2>কুইজ প্রতিযোগিতা</h2>
-                    <p>নিজের মেধা ও স্কাউটিং জ্ঞানকে কাজে লাগিয়ে জিতে নাও এই চমৎকার উপহার "স্কাউট হ্যান্ডবুক" বইটি।</p>
-                    
-                    <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                        
-                        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px;">
-                            <button class="btn-premium" id="startBtn" style="margin-bottom: 0;">
-                                <i class="fa-solid fa-bolt" id="btnIcon"></i> <span id="btnLbl">কুইজ শুরু করুন</span>
-                            </button>
-                            <button class="btn-outline" id="resultBtn" style="background: rgba(255,255,255,0.2); color: white; border-color: rgba(255,255,255,0.5);">
-                                <i class="fa-solid fa-trophy"></i> ফলাফল দেখুন
-                            </button>
-                        </div>
-                        
-                        <div class="hero-alert">
-                            <i class="fa-solid fa-circle-info"></i> 
-                            <span>(১২ জুন ২০২৬ তারিখ রাত ৮.০০ টায় লিংকটি এক্টিভেট হবে। ক্লিক করে এক্সাম দেয়া যাবে)</span>
-                        </div>
-                    </div>
-                </div>
-                <i class="fa-solid fa-book-open hero-icon"></i>
-            </section>
-
-            <section class="widget animate-in del-3">
-                <h4 class="widget-title"><i class="fa-solid fa-route" style="color: var(--primary);"></i> ইভেন্ট টাইমলাইন</h4>
-                
-                <div class="timeline-wrapper">
-                    <div class="timeline-track"></div>
-                    <div class="timeline-progress" id="timelineProgress"></div>
-                    
-                    <div class="timeline-step" id="step1">
-                        <div class="timeline-dot"><i class="fa-solid fa-pen"></i></div>
-                        <div class="step-info">
-                            <div class="timeline-text">রেজিস্ট্রেশন শুরু</div>
-                            <div class="timeline-date">৩ জুন ২০২৬</div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-step" id="step2">
-                        <div class="timeline-dot"><i class="fa-solid fa-hourglass-end"></i></div>
-                        <div class="step-info">
-                            <div class="timeline-text">রেজিস্ট্রেশন শেষ</div>
-                            <div class="timeline-date">১০ জুন ২০২৬</div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-step" id="step3">
-                        <div class="timeline-dot"><i class="fa-solid fa-bolt"></i></div>
-                        <div class="step-info">
-                            <div class="timeline-text">অনলাইন কুইজ এক্সাম</div>
-                            <div class="timeline-date">১২ জুন ২০২৬</div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-step" id="step4">
-                        <div class="timeline-dot"><i class="fa-solid fa-trophy"></i></div>
-                        <div class="step-info">
-                            <div class="timeline-text">ফলাফল</div>
-                            <div class="timeline-date">১৪ জুন ২০২৬</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="video-pro-container animate-in del-4">
-                <div class="video-inner-frame">
-                    <video src="videos/video1.mp4" autoplay loop muted playsinline controls preload="metadata"></video>
-                </div>
-            </section>
-
-            <section class="announcement-widget animate-in del-5">
+            <section class="announcement-widget animate-in del-2">
                 <div class="announce-icon-wrapper">
                     <i class="fa-solid fa-bullhorn"></i>
                 </div>
@@ -255,17 +45,39 @@
                 </div>
             </section>
 
-            <footer class="footer animate-in del-5">
+            <!-- PREMIUM MAIN RESULT BOARD -->
+            <section class="result-dashboard animate-in del-3">
+                <div class="dashboard-header">
+                    <div class="title-wrap">
+                        <i class="fa-solid fa-ranking-star glow-icon"></i>
+                        <h2>চূড়ান্ত ফলাফল</h2>
+                        <p>স্কাউট হ্যান্ডবুক কুইজ ২০২৬-এ অংশগ্রহণকারী সবার ফলাফল নিচে দেওয়া হলো।</p>
+                    </div>
+                </div>
+
+                <div class="dashboard-body">
+                    <div class="result-tabs">
+                        <button class="tab-btn active" data-tab="scout"><i class="fa-solid fa-campground"></i> স্কাউট শাখা</button>
+                        <button class="tab-btn" data-tab="rover"><i class="fa-solid fa-compass"></i> রোভার / লিডার</button>
+                    </div>
+
+                    <div class="search-box-main">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="resultSearch" placeholder="নাম বা ইউনিটের নাম দিয়ে আপনার রেজাল্ট খুঁজুন...">
+                    </div>
+
+                    <div class="result-list-container" id="resultContainer">
+                        <!-- JavaScript will inject FULL results here -->
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer animate-in del-4">
                 <div class="social-actions">
                     <a href="https://www.facebook.com/Scouthandbook1" target="_blank" rel="noopener noreferrer" class="social-btn fb-btn" aria-label="Facebook Page">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    
-                    <button class="social-btn share-btn" id="nativeShareBtn" aria-label="Share App">
-                        <i class="fa-solid fa-share"></i>
-                    </button>
                 </div>
-                
                 <div class="copyright-text">
                     © ২০২৬ অনলাইন স্কাউট হ্যান্ডবুক কুইজ। সর্বস্বত্ব সংরক্ষিত।
                 </div>
